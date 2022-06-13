@@ -1,3 +1,4 @@
 theme: jekyll-theme-slate
 title: Pages Playground
 description: playground for trying out github pages
+remote_theme: just-the-docs/just-the-docs
