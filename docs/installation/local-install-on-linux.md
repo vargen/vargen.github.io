@@ -17,8 +17,8 @@ Its fuzzing backend relies on docker to encapsulate different tasks such as buil
 
 **CI Fuzz contains three main components:**
 
-    * CI-Daemon: The CI-Server is responsible for backend tasks such as project compilation, managing fuzz-targets and operating the docker infrastructure and interacts with the CI-Client and the UI.
-    * User-Interface: The CI Fuzz extension for Visual Studio Code helps the user to create and manage fuzz-targets and reproduce crash.
-    * CI-Client: The CI-Client is the command line interface to initialize, build, and run fuzzers.
+* CI-Daemon: The CI-Server is responsible for backend tasks such as project compilation, managing fuzz-targets and operating the docker infrastructure and interacts with the CI-Client and the UI.
+* User-Interface: The CI Fuzz extension for Visual Studio Code helps the user to create and manage fuzz-targets and reproduce crash.
+* CI-Client: The CI-Client is the command line interface to initialize, build, and run fuzzers.
 
 
