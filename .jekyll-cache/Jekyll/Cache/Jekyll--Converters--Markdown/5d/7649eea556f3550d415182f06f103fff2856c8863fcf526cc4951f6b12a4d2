@@ -1,0 +1,19 @@
+I"\<h1 id="local-installation-on-linux">Local Installation on Linux</h1>
+
+<h2 id="how-to-install-ci-fuzz-locally-for-initial-project-setup">How to Install CI Fuzz Locally for Initial Project Setup</h2>
+
+<h3 id="overview">Overview</h3>
+
+<p>CI Fuzz is a software system including a fuzzing backend as well as a user interface.</p>
+
+<p>Its fuzzing backend relies on docker to encapsulate different tasks such as building, running, and monitoring components. The user can interact with the system through a command line interface (CLI) or via the CI Fuzz extension for Visual Studio Code.</p>
+
+<p><strong>CI Fuzz contains three main components:</strong></p>
+
+<ul>
+  <li>CI-Daemon: The CI-Server is responsible for backend tasks such as project compilation, managing fuzz-targets and operating the docker infrastructure and interacts with the CI-Client and the UI.</li>
+  <li>User-Interface: The CI Fuzz extension for Visual Studio Code helps the user to create and manage fuzz-targets and reproduce crash.</li>
+  <li>CI-Client: The CI-Client is the command line interface to initialize, build, and run fuzzers.</li>
+</ul>
+
+:ET
