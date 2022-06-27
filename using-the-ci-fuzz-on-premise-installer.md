@@ -110,12 +110,12 @@ Then create this file
 With the following content:
 
 >\#
-\# Code Intelligence Fuzzing environment values.
-\#
-\#
-\#
-\# Server Setup
-\#
+>\# Code Intelligence Fuzzing environment values.
+>\#
+>\#
+>\#
+>\# Server Setup
+>\#
 
 \# Change this value to the domain / IP where the server should be reachable and adjust\
 \# the protocol when TLS encryption is configured.\
