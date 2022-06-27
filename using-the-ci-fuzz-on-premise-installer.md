@@ -109,96 +109,98 @@ Then create this file
 
 With the following content:
 
-> \#
->
-> \# Code Intelligence Fuzzing environment values.&#x20;
->
-> \#
->
-> \#
->
-> \# Server Setup
->
-> \#
->
-> \# Change this value to the domain / IP where the server should be reachable and adjust\
-> \# the protocol when TLS encryption is configured.\
-> CIFUZZ\_SERVER\_ORIGIN=https://cifuzz.company.org:443
->
-> \# External HTTP/HTTPS port.\
-> CIFUZZ\_SERVER\_PORT=443# TLS Setup
->
-> \# Both settings are required for using the TLS enabled docker-compose.tls.yaml file.\
-> \# The TLS settings will be applied automatically by the cifuzz-server tool when\
-> \# these variables are set.\
-> CIFUZZ\_CERT\_FILE=\
-> CIFUZZ\_CERT\_KEY=
->
-> \# OAuth Apps
->
-> \# GitHub
->
-> \# Create a GitHub OAuth app by following the instructions here:\
-> \# https://docs.github.com/en/developers/apps/building-oauth-apps/creating-an-oauth-app
->
-> \# As callback URL use \`https:///auth/github/callback\`.
->
-> \# Enter both the GitHub OAuth app ID and secret in the values below.\
-> CIFUZZ\_GITHUB\_CLIENT\_ID=\
-> CIFUZZ\_GITHUB\_CLIENT\_SECRET=\
-> \# Set for GitHub Enterprise\
-> CIFUZZ\_GITHUB\_BASE\_URL=
->
-> \# GitLab
->
-> \# Create a GitLab OAuth app by following the instructions here:\
-> \# https://docs.gitlab.com/ee/integration/oauth\_provider.html
->
-> \# As callback URL use \`https:///auth/gitlab/callback\`.
->
-> \# Enter both the GitLab OAuth app ID and secret in the values below.\
-> CIFUZZ\_GITLAB\_CLIENT\_ID=\
-> CIFUZZ\_GITLAB\_CLIENT\_SECRET=
->
-> \# Configuration for on-premise GitLab.\
-> CIFUZZ\_GITLAB\_BASE\_URL=\
-> CIFUZZ\_GITLAB\_ROOT\_CAS=
->
-> \# Bitbucket
->
-> \# Configure an OAuth consumer by following the instructions here:\
-> \# https://support.atlassian.com/bitbucket-cloud/docs/integrate-another-application-through-oauth/
->
-> \# As callback URL use \`https://:/auth/bitbucket/callback\`.
->
-> \# Enter both the Bitbucket OAuth consumer ID and secret in the values below.\
-> CIFUZZ\_BITBUCKET\_CLIENT\_ID=\
-> CIFUZZ\_BITBUCKET\_CLIENT\_SECRET=
->
-> \# Bitbucket on-premise oauth1\
-> CI\_AUTH\_BITBUCKET\_URL=
->
-> \# Azure
->
-> \# Create a OAuth / OpenID app by following the instructions here:\
-> \# https://docs.microsoft.com/en-us/azure/active-directory/saas-apps/openidoauth-tutorial
->
-> \# As callback URL use \`https:///auth/azure/callback\`.
->
-> \# Enter both the Azure OAuth App ID and secret in the values below.\
-> CIFUZZ\_AZURE\_CLIENT\_ID=\
-> CIFUZZ\_AZURE\_CLIENT\_SECRET=
->
-> \# Gateway
->
-> \# CHANGE ME!
->
-> \# Shared secret to authenticate the gateway and the backend server. It must be at least\
-> \# 32 bytes of hex encoded bytes. If openssl is available you can generate a valid random\
-> \# value with \`openssl rand -hex 32\`.\
-> CIFUZZ\_INTER\_SERVICE\_AUTH\_KEY=0ec1302c35fcd8391ea57c2d6fcb63b1d9eca8af5845d79a4a51c1695d2462d3
->
-> ^
+```
+#
+# Code Intelligence Fuzzing environment values.
+#
+#
+# Server Setup
+#
+
+# Change this value to the domain / IP where the server should be reachable and adjust
+# the protocol when TLS encryption is configured.
+CIFUZZ_SERVER_ORIGIN=https://cifuzz.company.org:443
+
+# External HTTP/HTTPS port.
+CIFUZZ_SERVER_PORT=443
+
+# TLS Setup
+#
+# Both settings are required for using the TLS enabled docker-compose.tls.yaml file.
+# The TLS settings will be applied automatically by the cifuzz-server tool when
+# these variables are set.
+CIFUZZ_CERT_FILE=
+CIFUZZ_CERT_KEY=
+
+#
+# OAuth Apps
+#
+
+# GitHub
+#
+# Create a GitHub OAuth app by following the instructions here:
+# https://docs.github.com/en/developers/apps/building-oauth-apps/creating-an-oauth-app
+#
+# As callback URL use `https://<my-domain>/auth/github/callback`.
+#
+# Enter both the GitHub OAuth app ID and secret in the values below.
+CIFUZZ_GITHUB_CLIENT_ID=
+CIFUZZ_GITHUB_CLIENT_SECRET=
+# Set for GitHub Enterprise
+CIFUZZ_GITHUB_BASE_URL=
+
+# GitLab
+#
+# Create a GitLab OAuth app by following the instructions here:
+# https://docs.gitlab.com/ee/integration/oauth_provider.html
+#
+# As callback URL use `https://<my-domain>/auth/gitlab/callback`.
+#
+# Enter both the GitLab OAuth app ID and secret in the values below.
+CIFUZZ_GITLAB_CLIENT_ID=
+CIFUZZ_GITLAB_CLIENT_SECRET=
+
+# Configuration for on-premise GitLab.
+CIFUZZ_GITLAB_BASE_URL=
+CIFUZZ_GITLAB_ROOT_CAS=
+
+# Bitbucket
+#
+# Configure an OAuth consumer by following the instructions here:
+# https://support.atlassian.com/bitbucket-cloud/docs/integrate-another-application-through-oauth/
+#
+# As callback URL use `https://<my-domain>:<port>/auth/bitbucket/callback`.
+#
+# Enter both the Bitbucket OAuth consumer ID and secret in the values below.
+CIFUZZ_BITBUCKET_CLIENT_ID=
+CIFUZZ_BITBUCKET_CLIENT_SECRET=
+
+# Bitbucket on-premise oauth1
+CI_AUTH_BITBUCKET_URL=
+
+# Azure
+#
+# Create a OAuth / OpenID app by following the instructions here:
+# https://docs.microsoft.com/en-us/azure/active-directory/saas-apps/openidoauth-tutorial
+#
+# As callback URL use `https://<my-domain>/auth/azure/callback`.
+#
+# Enter both the Azure OAuth App ID and secret in the values below.
+CIFUZZ_AZURE_CLIENT_ID=
+CIFUZZ_AZURE_CLIENT_SECRET=
+
+#
+# Gateway
+#
+
+# CHANGE ME!
+#
+# Shared secret to authenticate the gateway and the backend server. It must be at least
+# 32 bytes of hex encoded bytes. If openssl is available you can generate a valid random
+# value with `openssl rand -hex 32`.
+CIFUZZ_INTER_SERVICE_AUTH_KEY=0ec1302c35fcd8391ea57c2d6fcb63b1d9eca8af5845d79a4a51c1695d2462d3
+
+```
 
 Edit the variables:
 
