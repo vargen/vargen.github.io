@@ -26,7 +26,7 @@ The legacy server used separate ports for HTTP and GRPC. If you are migrating, p
 
 #### Linux
 
-The only supported operating system is Linux. Most linux distributions will be fine, while the most comfort can be achieved by using one that supports [systemd](broken-reference).
+The only supported operating system is Linux. Most linux distributions will be fine, while the most comfort can be achieved by using one that supports [systemd](broken-reference/).
 
 #### Docker
 
@@ -36,7 +36,7 @@ Note: Podman on RedHat has not been tested, only regular docker.
 
 #### Docker-Compose
 
-In addition to the [docker engine](broken-reference), the setup uses [docker-compose](https://docs.docker.com/compose/) to orchestrate its components. To setup docker-compose, follow the [installation instructions](https://docs.docker.com/compose/install/).
+In addition to the [docker engine](broken-reference/), the setup uses [docker-compose](https://docs.docker.com/compose/) to orchestrate its components. To setup docker-compose, follow the [installation instructions](https://docs.docker.com/compose/install/).
 
 The minimum supported docker-compose version is 1.17.0.
 
@@ -109,128 +109,96 @@ Then create this file
 
 With the following content:
 
->\#
->\# Code Intelligence Fuzzing environment values.
->\#
->\#
->\#
->\# Server Setup
->\#
-
-\# Change this value to the domain / IP where the server should be reachable and adjust\
-\# the protocol when TLS encryption is configured.\
-CIFUZZ\_SERVER\_ORIGIN=https://cifuzz.company.org:443
-
-\# External HTTP/HTTPS port.\
-CIFUZZ\_SERVER\_PORT=443
-
-\# TLS Setup
-
-##
-
-\# Both settings are required for using the TLS enabled docker-compose.tls.yaml file.\
-\# The TLS settings will be applied automatically by the cifuzz-server tool when\
-\# these variables are set.\
-CIFUZZ\_CERT\_FILE=\
-CIFUZZ\_CERT\_KEY=
-
-##
-
-\# OAuth Apps
-
-##
-
-\# GitHub
-
-##
-
-\# Create a GitHub OAuth app by following the instructions here:\
-\# https://docs.github.com/en/developers/apps/building-oauth-apps/creating-an-oauth-app
-
-##
-
-\# As callback URL use \`https:///auth/github/callback\`.
-
-##
-
-\# Enter both the GitHub OAuth app ID and secret in the values below.\
-CIFUZZ\_GITHUB\_CLIENT\_ID=\
-CIFUZZ\_GITHUB\_CLIENT\_SECRET=\
-\# Set for GitHub Enterprise\
-CIFUZZ\_GITHUB\_BASE\_URL=
-
-\# GitLab
-
-##
-
-\# Create a GitLab OAuth app by following the instructions here:\
-\# https://docs.gitlab.com/ee/integration/oauth\_provider.html
-
-##
-
-\# As callback URL use \`https:///auth/gitlab/callback\`.
-
-##
-
-\# Enter both the GitLab OAuth app ID and secret in the values below.\
-CIFUZZ\_GITLAB\_CLIENT\_ID=\
-CIFUZZ\_GITLAB\_CLIENT\_SECRET=
-
-\# Configuration for on-premise GitLab.\
-CIFUZZ\_GITLAB\_BASE\_URL=\
-CIFUZZ\_GITLAB\_ROOT\_CAS=
-
-\# Bitbucket
-
-##
-
-\# Configure an OAuth consumer by following the instructions here:\
-\# https://support.atlassian.com/bitbucket-cloud/docs/integrate-another-application-through-oauth/
-
-##
-
-\# As callback URL use \`https://:/auth/bitbucket/callback\`.
-
-##
-
-\# Enter both the Bitbucket OAuth consumer ID and secret in the values below.\
-CIFUZZ\_BITBUCKET\_CLIENT\_ID=\
-CIFUZZ\_BITBUCKET\_CLIENT\_SECRET=
-
-\# Bitbucket on-premise oauth1\
-CI\_AUTH\_BITBUCKET\_URL=
-
-\# Azure
-
-##
-
-\# Create a OAuth / OpenID app by following the instructions here:\
-\# https://docs.microsoft.com/en-us/azure/active-directory/saas-apps/openidoauth-tutorial
-
-##
-
-\# As callback URL use \`https:///auth/azure/callback\`.
-
-##
-
-\# Enter both the Azure OAuth App ID and secret in the values below.\
-CIFUZZ\_AZURE\_CLIENT\_ID=\
-CIFUZZ\_AZURE\_CLIENT\_SECRET=
-
-##
-
-\# Gateway
-
-##
-
-\# CHANGE ME!
-
-##
-
-\# Shared secret to authenticate the gateway and the backend server. It must be at least\
-\# 32 bytes of hex encoded bytes. If openssl is available you can generate a valid random\
-\# value with \`openssl rand -hex 32\`.\
-CIFUZZ\_INTER\_SERVICE\_AUTH\_KEY=0ec1302c35fcd8391ea57c2d6fcb63b1d9eca8af5845d79a4a51c1695d2462d3
+> \#
+>
+> \# Code Intelligence Fuzzing environment values.&#x20;
+>
+> \#
+>
+> \#
+>
+> \# Server Setup
+>
+> \#
+>
+> \# Change this value to the domain / IP where the server should be reachable and adjust\
+> \# the protocol when TLS encryption is configured.\
+> CIFUZZ\_SERVER\_ORIGIN=https://cifuzz.company.org:443
+>
+> \# External HTTP/HTTPS port.\
+> CIFUZZ\_SERVER\_PORT=443# TLS Setup
+>
+> \# Both settings are required for using the TLS enabled docker-compose.tls.yaml file.\
+> \# The TLS settings will be applied automatically by the cifuzz-server tool when\
+> \# these variables are set.\
+> CIFUZZ\_CERT\_FILE=\
+> CIFUZZ\_CERT\_KEY=
+>
+> \# OAuth Apps
+>
+> \# GitHub
+>
+> \# Create a GitHub OAuth app by following the instructions here:\
+> \# https://docs.github.com/en/developers/apps/building-oauth-apps/creating-an-oauth-app
+>
+> \# As callback URL use \`https:///auth/github/callback\`.
+>
+> \# Enter both the GitHub OAuth app ID and secret in the values below.\
+> CIFUZZ\_GITHUB\_CLIENT\_ID=\
+> CIFUZZ\_GITHUB\_CLIENT\_SECRET=\
+> \# Set for GitHub Enterprise\
+> CIFUZZ\_GITHUB\_BASE\_URL=
+>
+> \# GitLab
+>
+> \# Create a GitLab OAuth app by following the instructions here:\
+> \# https://docs.gitlab.com/ee/integration/oauth\_provider.html
+>
+> \# As callback URL use \`https:///auth/gitlab/callback\`.
+>
+> \# Enter both the GitLab OAuth app ID and secret in the values below.\
+> CIFUZZ\_GITLAB\_CLIENT\_ID=\
+> CIFUZZ\_GITLAB\_CLIENT\_SECRET=
+>
+> \# Configuration for on-premise GitLab.\
+> CIFUZZ\_GITLAB\_BASE\_URL=\
+> CIFUZZ\_GITLAB\_ROOT\_CAS=
+>
+> \# Bitbucket
+>
+> \# Configure an OAuth consumer by following the instructions here:\
+> \# https://support.atlassian.com/bitbucket-cloud/docs/integrate-another-application-through-oauth/
+>
+> \# As callback URL use \`https://:/auth/bitbucket/callback\`.
+>
+> \# Enter both the Bitbucket OAuth consumer ID and secret in the values below.\
+> CIFUZZ\_BITBUCKET\_CLIENT\_ID=\
+> CIFUZZ\_BITBUCKET\_CLIENT\_SECRET=
+>
+> \# Bitbucket on-premise oauth1\
+> CI\_AUTH\_BITBUCKET\_URL=
+>
+> \# Azure
+>
+> \# Create a OAuth / OpenID app by following the instructions here:\
+> \# https://docs.microsoft.com/en-us/azure/active-directory/saas-apps/openidoauth-tutorial
+>
+> \# As callback URL use \`https:///auth/azure/callback\`.
+>
+> \# Enter both the Azure OAuth App ID and secret in the values below.\
+> CIFUZZ\_AZURE\_CLIENT\_ID=\
+> CIFUZZ\_AZURE\_CLIENT\_SECRET=
+>
+> \# Gateway
+>
+> \# CHANGE ME!
+>
+> \# Shared secret to authenticate the gateway and the backend server. It must be at least\
+> \# 32 bytes of hex encoded bytes. If openssl is available you can generate a valid random\
+> \# value with \`openssl rand -hex 32\`.\
+> CIFUZZ\_INTER\_SERVICE\_AUTH\_KEY=0ec1302c35fcd8391ea57c2d6fcb63b1d9eca8af5845d79a4a51c1695d2462d3
+>
+> ^
 
 Edit the variables:
 
@@ -259,12 +227,12 @@ sudo docker ps
 
 Output should look similar to this:
 
-CONTAINER ID   IMAGE                                                  COMMAND                  CREATED      STATUS      PORTS                                       NAMES\
-c328d2e9ad6b   prometheuscommunity/postgres-exporter:v0.10.0          "/bin/postgres\_expor…"   2 days ago   Up 2 days   0.0.0.0:9187->9187/tcp, :::9187->9187/tcp   cifuzz\_db-metrics\_1\
-3ee314af29ce   cifuzzpublictest.azurecr.io/cifuzz/ci-backend:2.31.0   "/usr/bin/java -cp /…"   2 days ago   Up 2 days   0.0.0.0:6777->6777/tcp, :::6777->6777/tcp   cifuzz\_ci-backend\_1\
-2e4f9bb6c8e7   postgres:12.7                                          "docker-entrypoint.s…"   2 days ago   Up 2 days   5432/tcp                                    cifuzz\_db\_1\
-c24dd46702e8   cifuzzpublictest.azurecr.io/cifuzz/reporting:2.31.0    "/usr/bin/java -cp /…"   2 days ago   Up 2 days                                               cifuzz\_reporting\_1\
-60d8f8ca1940   cifuzzpublictest.azurecr.io/cifuzz/gateway:2.31.0      "/app/cmd/gateway/ba…"   2 days ago   Up 2 days   0.0.0.0:80->80/tcp, :::80->80/tcp           cifuzz\_gateway\_1
+CONTAINER ID IMAGE COMMAND CREATED STATUS PORTS NAMES\
+c328d2e9ad6b prometheuscommunity/postgres-exporter:v0.10.0 "/bin/postgres\_expor…" 2 days ago Up 2 days 0.0.0.0:9187->9187/tcp, :::9187->9187/tcp cifuzz\_db-metrics\_1\
+3ee314af29ce cifuzzpublictest.azurecr.io/cifuzz/ci-backend:2.31.0 "/usr/bin/java -cp /…" 2 days ago Up 2 days 0.0.0.0:6777->6777/tcp, :::6777->6777/tcp cifuzz\_ci-backend\_1\
+2e4f9bb6c8e7 postgres:12.7 "docker-entrypoint.s…" 2 days ago Up 2 days 5432/tcp cifuzz\_db\_1\
+c24dd46702e8 cifuzzpublictest.azurecr.io/cifuzz/reporting:2.31.0 "/usr/bin/java -cp /…" 2 days ago Up 2 days cifuzz\_reporting\_1\
+60d8f8ca1940 cifuzzpublictest.azurecr.io/cifuzz/gateway:2.31.0 "/app/cmd/gateway/ba…" 2 days ago Up 2 days 0.0.0.0:80->80/tcp, :::80->80/tcp cifuzz\_gateway\_1
 
 #### Advanced configuration options
 
@@ -276,16 +244,16 @@ Set your reverse proxy or load balancer to direct HTTP and HTTP2/GRPC traffic to
 
 server {\
 listen 443 ssl;\
-ssl\_certificate      /home/azureuser/tls/cifuzz.onprem.lab\_cert.pem;\
-ssl\_certificate\_key  /home/azureuser/tls/cifuzz.onprem.lab\_key.pem;\
+ssl\_certificate /home/azureuser/tls/cifuzz.onprem.lab\_cert.pem;\
+ssl\_certificate\_key /home/azureuser/tls/cifuzz.onprem.lab\_key.pem;\
 location / {\
 proxy\_pass http://localhost:80/;\
 }\
 }\
 server {\
 listen 6443 http2 ssl;\
-ssl\_certificate      /home/azureuser/tls/cifuzz.onprem.lab\_cert.pem;\
-ssl\_certificate\_key  /home/azureuser/tls/cifuzz.onprem.lab\_key.pem;\
+ssl\_certificate /home/azureuser/tls/cifuzz.onprem.lab\_cert.pem;\
+ssl\_certificate\_key /home/azureuser/tls/cifuzz.onprem.lab\_key.pem;\
 client\_max\_body\_size 500M;\
 location / {\
 grpc\_pass grpc://localhost:80;\
