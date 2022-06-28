@@ -1,0 +1,104 @@
+{"0": {
+    "doc": "About",
+    "title": "About",
+    "content": "This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at jekyllrb.com . You can find the source code for Minima at GitHub: jekyll / minima . You can find the source code for Jekyll at GitHub: jekyll / jekyll . ",
+    "url": "http://localhost:4000/about/",
+    "relUrl": "/about/"
+  },"1": {
+    "doc": "Configuration and Usage",
+    "title": "Configuration and Usage",
+    "content": " ",
+    "url": "http://localhost:4000/docs/Configuration-and-Usage",
+    "relUrl": "/docs/Configuration-and-Usage"
+  },"2": {
+    "doc": "FAQ",
+    "title": "Frequently Asked Questions",
+    "content": "Something about a chicken and a road . ",
+    "url": "http://localhost:4000/docs/troubleshooting/faq.html#frequently-asked-questions",
+    "relUrl": "/docs/troubleshooting/faq.html#frequently-asked-questions"
+  },"3": {
+    "doc": "FAQ",
+    "title": "FAQ",
+    "content": " ",
+    "url": "http://localhost:4000/docs/troubleshooting/faq.html",
+    "relUrl": "/docs/troubleshooting/faq.html"
+  },"4": {
+    "doc": "Getting Started",
+    "title": "Getting Started with CI Fuzz",
+    "content": " ",
+    "url": "http://localhost:4000/docs/getting-started.html#getting-started-with-ci-fuzz",
+    "relUrl": "/docs/getting-started.html#getting-started-with-ci-fuzz"
+  },"5": {
+    "doc": "Getting Started",
+    "title": "What’s All the Fuzz About?",
+    "content": "Fuzzing is a powerful tool that finds bugs in programs. Hackers regularly use fuzzing to discover software vulnerabilities to build their attacks. However, companies can also use fuzzing to find and fix vulnerabilities and thus improve the security of their software. Since both attackers and defenders have access to powerful IT resources, fuzzing has become an essential tool in the “arms race” between hackers and security experts. Fuzzing technology emerged in 1988 (in a class project by Prof. Barton Miller) and has gained more exposure recently through the release of the AFL tool in 2016. Despite the high rate of adoption by major players such as Google, Microsoft, Facebook and the like, fuzzing is still not widely adopted and is unknown to many professionals. ",
+    "url": "http://localhost:4000/docs/getting-started.html#whats-all-the-fuzz-about",
+    "relUrl": "/docs/getting-started.html#whats-all-the-fuzz-about"
+  },"6": {
+    "doc": "Getting Started",
+    "title": "What Fuzzing Is",
+    "content": "Fuzzing is a dynamic testing method used for identifying bugs and vulnerabilities in software. As opposed to static analysis, fuzzing produces almost no false-positives. With fuzzing, you can conduct black-box, grey-box, and white-box tests. This flexibility makes fuzzing an extremely useful tool in software testing, regardless of source code availability. Black-box fuzzing, for example, can be applied by anyone who wants to examine the reliability of the software they are using or are planning to use. So, what happens during the fuzzing process? During fuzzing, random inputs are fed to the software under test until a crash happens. The input that resulted in a crash is then analyzed, and discovered bugs can be fixed. If the given inputs did not produce a crash, they are mutated to produce further inputs. Software solutions that work with fuzzing are called fuzzers. In 2016, american fuzzy lop (AFL) improved fuzzing by considering the coverage, i.e. the share of traversed code paths in the generation of new inputs. AFL and other coverage-based fuzzers could discover far more paths of a program than “dumb” fuzzers. The next major improvement in the world of fuzzing came in the form of Sanitizers that detect more types of errors than just crashes. The AddressSanitizer, for example, monitors memory access, while the ThreadSanitizer watches for race conditions between multiple threads. Using Sanitizers for fuzzing was made even more practical with the advent of libFuzzer, a fuzzing engine baked into LLVM, due to smart handing of the large virtual memory requirements of the AddressSanitizer. In short, the combination of coverage information with Sanitizers is what we call modern fuzzing. This technology allows continuous and precise targeting of real vulnerabilities in software. ",
+    "url": "http://localhost:4000/docs/getting-started.html#what-fuzzing-is",
+    "relUrl": "/docs/getting-started.html#what-fuzzing-is"
+  },"7": {
+    "doc": "Getting Started",
+    "title": "Getting Started",
+    "content": " ",
+    "url": "http://localhost:4000/docs/getting-started.html",
+    "relUrl": "/docs/getting-started.html"
+  },"8": {
+    "doc": "Home",
+    "title": "Home",
+    "content": " ",
+    "url": "http://localhost:4000/",
+    "relUrl": "/"
+  },"9": {
+    "doc": "Installation",
+    "title": "Installation",
+    "content": " ",
+    "url": "http://localhost:4000/docs/Installation",
+    "relUrl": "/docs/Installation"
+  },"10": {
+    "doc": "Local Fuzzing C++",
+    "title": "Local Fuzzing C++",
+    "content": " ",
+    "url": "http://localhost:4000/docs/configuration-and-usage/local-c-plus-plus.html",
+    "relUrl": "/docs/configuration-and-usage/local-c-plus-plus.html"
+  },"11": {
+    "doc": "Local Installation on Linux",
+    "title": "Local Installation on Linux",
+    "content": " ",
+    "url": "http://localhost:4000/docs/installation/local-install-on-linux.html",
+    "relUrl": "/docs/installation/local-install-on-linux.html"
+  },"12": {
+    "doc": "Local Installation on Linux",
+    "title": "How to Install CI Fuzz Locally for Initial Project Setup",
+    "content": "Overview . CI Fuzz is a software system including a fuzzing backend as well as a user interface. Its fuzzing backend relies on docker to encapsulate different tasks such as building, running, and monitoring components. The user can interact with the system through a command line interface (CLI) or via the CI Fuzz extension for Visual Studio Code. CI Fuzz contains three main components: . | CI-Daemon: The CI-Server is responsible for backend tasks such as project compilation, managing fuzz-targets and operating the docker infrastructure and interacts with the CI-Client and the UI. | User-Interface: The CI Fuzz extension for Visual Studio Code helps the user to create and manage fuzz-targets and reproduce crash. | CI-Client: The CI-Client is the command line interface to initialize, build, and run fuzzers. | . ",
+    "url": "http://localhost:4000/docs/installation/local-install-on-linux.html#how-to-install-ci-fuzz-locally-for-initial-project-setup",
+    "relUrl": "/docs/installation/local-install-on-linux.html#how-to-install-ci-fuzz-locally-for-initial-project-setup"
+  },"13": {
+    "doc": "Local Installation on Windows",
+    "title": "Use CI Fuzz on Windows With WSL",
+    "content": "This article shows how to setup CI Fuzz on Windows. In short, we will install the ci-daemon inside the WSL and will setup VS Code to communicate with it. In the end you will be able to use all the same features that are available in CI Fuzz on Linux. First, you need to install WSL 2 as described in the Windows 10 documentation. In this tutorial, we will use Ubuntu 20.04 as the Linux distribution running inside WSL 2. Next, install Docker Desktop in Windows 10. In the docker-installer select to install the required Windows components for WSL 2. This way the ci-daemon can use this docker installation as a backend and we don’t need to install docker inside the WSL. ",
+    "url": "http://localhost:4000/docs/installation/local-install-on-windows.html#use-ci-fuzz-on-windows-with-wsl",
+    "relUrl": "/docs/installation/local-install-on-windows.html#use-ci-fuzz-on-windows-with-wsl"
+  },"14": {
+    "doc": "Local Installation on Windows",
+    "title": "Local Installation on Windows",
+    "content": " ",
+    "url": "http://localhost:4000/docs/installation/local-install-on-windows.html",
+    "relUrl": "/docs/installation/local-install-on-windows.html"
+  },"15": {
+    "doc": "Server Install On-Prem",
+    "title": "Server Install On-Prem",
+    "content": "Lorem Ipsum . ",
+    "url": "http://localhost:4000/docs/installation/server-install-on-prem.html",
+    "relUrl": "/docs/installation/server-install-on-prem.html"
+  },"16": {
+    "doc": "Troubleshooting",
+    "title": "Troubleshooting",
+    "content": " ",
+    "url": "http://localhost:4000/docs/Troubleshooting",
+    "relUrl": "/docs/Troubleshooting"
+  }
+}
