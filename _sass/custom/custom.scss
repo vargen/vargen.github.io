@@ -1,0 +1,204 @@
+//remove justthedocs text from footer
+.site-footer {
+    display: none;
+}
+
+//assign same font color for all text
+body{
+    color: #3c3c47;
+}
+
+//changes color of sidebar on desktop
+.side-bar {
+    background-image: linear-gradient(to right, rgba(112, 176, 189, 1), rgba(210, 229, 252, 1)) !important;
+}
+
+//remove hover effect on logo
+.site-title:hover {
+    background-image: none !important;
+}
+
+//adds box shadow effect to all images
+.main img{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+//changes color of breadcrumb
+.breadcrumb-nav-list-item a, .main-content .anchor-heading svg, .site-header .icon, .search-label .search-icon, .search-input:focus .search-icon {
+  color: #4ab1cb;
+}
+
+//changes breadcrumb hover effect
+.breadcrumb-nav-list-item a:hover {
+    text-decoration: none!important;
+    background-image: none;
+}
+
+//changes color of expander
+.nav-list-item a, .nav-list .nav-list-item .nav-list-expander {
+    color: #3c3c47;
+}
+
+//adds some margin right to expander
+.nav-list .nav-list-item .nav-list-expander{
+    margin-right: 10px;
+}
+
+//changes color of expander on hover
+.nav-list .nav-list-item .nav-list-expander:hover{
+    background: #4ab1cb;
+    color: #fff;
+}
+
+//styling for nav menu when active
+.nav-list .nav-list-item .nav-list-link.active{
+    background: #1d8296!important;
+    color: #fff!important;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+//styling for nav menu when hovered
+.nav-list .nav-list-item .nav-list-link:hover, .nav-list .nav-list-item > .nav-list .nav-list-item .nav-list-link:hover {
+    background: #4ab1cb;
+    border-radius: 5px;
+    color: #fff;
+    margin-right: 10px;
+}
+
+//justify all paragraphs
+.main-content p {
+    text-align: justify;
+}
+
+//styling for the search results section
+.search-result-title .search-result-doc, .search-result-doc .search-result-icon, .search-result-section{
+    color: #4ab1cb;
+}
+
+.search-result-previews{
+    color: #3c3c47;
+}
+
+.search-result-doc.search-result-doc-parent {
+    opacity: 1;
+}
+
+//color of anchor tags
+div#top a{
+    color: #4ab1cb;
+}
+    
+    //Styling buttonsin header
+.aux-nav .aux-nav-list-item {
+    padding-top: 1rem;
+    padding-bottom: 1.25rem;
+}
+    
+a.site-button {
+    background-color: #4ab1cb;
+    color: white!important;
+    border-radius: 5px;
+    padding: 17px 21px;
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 1rem;
+}
+    
+.site-button:hover {
+    background-image: none;
+    background-color: #1d8296;
+}
+    
+body .side-bar .site-header .icon {
+    color: white;
+}
+    
+//Left margin in sidebar items
+.nav-list .nav-list-item .nav-list-link.active {
+    margin-left: 10px;
+}
+
+
+@media (max-width: 799px) {
+    //changes the background of sidebar in mobile view
+    .side-bar {
+        background:#fff!important;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        // border-bottom: 1px solid #4ab1cb;
+    }
+
+    //adds spacing between nav items in mobile view
+    .nav-list .nav-list-item {
+        margin-bottom: 7px;
+        margin-top: 7px;
+    }
+}
+
+@media (min-width: 50rem) and (min-width: 31.25rem){
+    //increases font size in nav menu on desktop and adds spacing
+    .nav-list .nav-list-item {
+        font-size: 16px!important;
+        margin-bottom: 7px;
+        margin-top: 7px;
+    }}
+
+@media (min-width: 50rem){
+    //increases the height of the header in desktop
+    .site-header {
+    height: 100px;
+    max-height: 100px;
+    border-bottom: none;
+    padding-top: 10px;}
+
+    .main-header {
+        height: 80px;
+    }
+    //increases the fontsize of typed search terms.
+    .search-input{
+        font-size: 16px;
+    }
+
+    //width of content area
+    .main {
+    max-width: 80rem;
+    }
+        
+    //spacing between search bar and button in header
+    .main-header {
+    column-gap: 0.1rem;
+    margin-left: 1rem;
+    }
+}
+
+
+@media (min-width: 66.5rem) {
+    //increases the width of the header in desktop
+    .site-header{
+    width: 300px;
+    }
+
+    //reduces sidebar width
+    .side-bar {
+    width: 330px;
+    min-width: 300px;
+    }
+        
+    //Reduces space between sidebar and content area
+    .main {
+    margin-left: 320px;
+    }    
+}
+
+.main-content ul.no-bullets {
+    list-style: none;
+    padding-left: 0em;
+
+    li {
+      &::before {
+        position: absolute;
+        margin-left: -1.4em;
+        content: "";
+      }
+    }
+}
