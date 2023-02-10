@@ -33,8 +33,8 @@ CI Fuzz CLI supports the following language and build system combinations:
 If you are new to CI Fuzz CLI, or just fuzz testing in general, then check out our quick start guides. They will walk you through creating your first fuzz test with CI Fuzz CLI.
 
 <span class="fs-4">
-[Quick Start C/C++]({{ site.baseurl }}{% link docs/ci-fuzz-cli/quick-start-c-cpp.md %}){: .btn .mr-3 } 
-[Quick Start Java]({{ site.baseurl }}{% link docs/ci-fuzz-cli/quick-start-java.md %}){: .btn }
+[Quick Start C/C++]({{ site.baseurl }}{% link docs/quick-start-c-cpp.md %}){: .btn .mr-3 } 
+[Quick Start Java]({{ site.baseurl }}{% link docs/quick-start-java.md %}){: .btn }
 </span>
 
 

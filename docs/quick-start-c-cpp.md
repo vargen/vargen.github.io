@@ -12,7 +12,7 @@ This quick start guide is intended to teach you the basics of using `cifuzz` wit
 
 This guide was created using Ubuntu 20.04 x64. If you are on MacOS or Windows, you should be able to follow along without any issues.
 
-If you have not yet installed `cifuzz`, then first head to the [installation section]({{ site.baseurl }}{% link docs/ci-fuzz-cli/cli-installation.md %})
+If you have not yet installed `cifuzz`, then first head to the [installation section]({{ site.baseurl }}{% link docs/cli-installation.md %})
 
 ## Table of contents
 {: .no_toc .text-delta }

@@ -20,7 +20,7 @@ These are the items that must be specified to use `cifuzz remote-run` with CI Fu
 
 ### cifuzz.yaml
 
-The project must have a `cifuzz.yaml` (created from `cifuzz init`) with the appropriate build-system files modified. See [how to initialize a project]({{ site.baseurl }}{% link docs/ci-fuzz-cli/cli-initialize-a-project.md %}) for details on how to do that.
+The project must have a `cifuzz.yaml` (created from `cifuzz init`) with the appropriate build-system files modified. See [how to initialize a project]({{ site.baseurl }}{% link docs/cli-initialize-a-project.md %}) for details on how to do that.
 
 `cifuzz.yaml` should have the correct `build-system` set (e.g. CMake, Bazel). If the `build-system` is other, a `build-command` must be specified. This can either be set in `cifuzz.yaml` or passed as a command line argument using the `--build-command` flag of `remote-run`.
 
