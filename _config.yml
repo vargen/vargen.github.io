@@ -104,14 +104,7 @@ back_to_top_text: "Back to top"
 
 enable_copy_code_button: true
 
-
-include: 
-  - _headers
-  - _redirects
-
 exclude:
-  - docs/Getting Started
-  - docs/Overview
   - Gemfile
   - Gemfile.lock
   - README.md

@@ -330,5 +330,5 @@ When `cifuzz` discovers a finding, it stores the output from the finding and the
 ```
 If you examine lines 13 and 14 in `src/explore_me.cpp`, you can see this is where a `strcpy` call attempts to copy too many bytes to the buffer.
 
-`cifuzz` also stores the crashing input in a directory named <name_of_fuzz_test>_inputs. That would be `my_fuzz_test_inputs` in this example. The crashing input has the same name as the finding. Findings in this directory will be used as inputs for future runs to help identify regressions. See the [regression testing](/docs/ci-fuzz-cli/cli-regression-testing.md) section for additional information on creating regression tests from your fuzzing inputs.
+`cifuzz` also stores the crashing input in a directory named <name_of_fuzz_test>_inputs. That would be `my_fuzz_test_inputs` in this example. The crashing input has the same name as the finding. Findings in this directory will be used as inputs for future runs to help identify regressions. See the [regression testing](/docs/cli-regression-testing.md) section for additional information on creating regression tests from your fuzzing inputs.
 
