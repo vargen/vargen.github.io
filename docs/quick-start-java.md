@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Quick Start Java
-nav_order: 2
+nav_order: 1
 permalink: cli-quick-start-java
 ---
 

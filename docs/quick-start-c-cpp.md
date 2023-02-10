@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Quick Start C/C++
-nav_order: 1
+nav_order: 0
 permalink: cli-quick-start-cpp
 ---
 

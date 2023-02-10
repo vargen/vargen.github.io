@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Running a Fuzz Test
-nav_order: 4
+nav_order: 5
 permalink: cli-running-a-fuzz-test
 ---
 

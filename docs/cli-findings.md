@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Findings
-nav_order: 5
+nav_order: 6
 permalink: cli-findings
 ---
 
