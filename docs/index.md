@@ -1,8 +1,5 @@
 ---
 layout: home
-title: CI Fuzz CLI
-nav_order: 0
-permalink: cifuzz-cli
 ---
 
 # **CI Fuzz CLI**

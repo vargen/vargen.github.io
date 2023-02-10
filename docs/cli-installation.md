@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Installation
-nav_order: 0
+nav_order: 
 permalink: cli-installation
 ---
 # **Installing CI Fuzz CLI**
