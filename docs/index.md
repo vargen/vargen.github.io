@@ -1,9 +1,7 @@
 ---
-layout: default
+layout: home
 title: CI Fuzz CLI
 nav_order: 0
-has_children: true
-has_toc: false
 permalink: cifuzz-cli
 ---
 
