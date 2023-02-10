@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Quick Start Java
-parent: CI Fuzz CLI
 nav_order: 2
 permalink: cli-quick-start-java
 ---

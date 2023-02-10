@@ -1,7 +1,6 @@
 ---
 layout: default
 #title: Regression Testing
-parent: CI Fuzz CLI
 nav_order: 7
 permalink: cli-regression-testing
 ---

@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Creating a Fuzz Test
-parent: CI Fuzz CLI
 nav_order: 4
 permalink: cli-creating-a-fuzz-test
 ---

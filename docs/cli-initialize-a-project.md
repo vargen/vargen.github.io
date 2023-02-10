@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Initializing a Project
-parent: CI Fuzz CLI
 nav_order: 3
 permalink: cli-initializing-a-project
 ---

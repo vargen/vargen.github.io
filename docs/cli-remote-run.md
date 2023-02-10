@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Remote Run
-parent: CI Fuzz CLI
 nav_order: 8
 permalink: cli-remote-run
 ---

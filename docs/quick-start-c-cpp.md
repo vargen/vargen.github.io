@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Quick Start C/C++
-parent: CI Fuzz CLI
 nav_order: 1
 permalink: cli-quick-start-cpp
 ---

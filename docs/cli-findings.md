@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Findings
-parent: CI Fuzz CLI
 nav_order: 5
 permalink: cli-findings
 ---

@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Running a Fuzz Test
-parent: CI Fuzz CLI
 nav_order: 4
 permalink: cli-running-a-fuzz-test
 ---
