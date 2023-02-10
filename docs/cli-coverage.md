@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Coverage
-parent: CI Fuzz CLI
 nav_order: 6
 permalink: cli-coverage
 ---
